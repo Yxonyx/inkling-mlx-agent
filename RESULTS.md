@@ -20,7 +20,11 @@ The live task completed the same three reads and returned the correct answer in 
 
 - **B200 rejection-sampling fine-tuning.** An attention LoRA was trained on 85 verifier-passing Pi trajectories. In a preliminary comparison on 103 tasks with three attempts per arm and task, pass rates were 50.5% for stock and 50.2% for the adapter. The adapter improved on 13 tasks, regressed on 12 and tied on 78. The earlier evaluation transport omitted reasoning between turns, limiting how directly these results apply to the current Pi protocol. [Aggregated outcomes](results/adaptation/pi-training-preview.json)
 - **Local adapter smoke.** Against the previous adapter, a later GRPO candidate used 3 versus 8 tool calls on one shared Go success and 10 versus 9 on one shared Python success. Both adapters failed the third task. These three paired observations establish the variation across tasks.
-- **Current adapter versus stock.** Both completed one task and timed out on another, where both edited workspaces passed the external verifier. On the completed task stock used 4 calls and 40.3 s, and the adapter used 5 calls and 52.2 s. The protocol preflight stopped the remaining comparison. The adapter is still experimental.
+- **Earlier experimental adapter versus stock.** Both completed one task and timed out on another, where both edited workspaces passed the external verifier. On the completed task stock used 4 calls and 40.3 s, and the adapter used 5 calls and 52.2 s. The protocol preflight stopped the remaining comparison. The adapter is still experimental.
+
+## Released v0.1.0 adapter
+
+Stock and the released adapter both passed 14/14 English basics. On seven additional English problems with a 512-token output limit, the adapter passed 2/7 and stock passed 1/7. The additional success finished within the output limit. The prior adapter and the released adapter both passed eight checks across two Hungarian conversations. The released adapter completed all eight turns without repeating a final answer. The larger Pi comparison was stopped before the released adapter completed a comparable set. See the [adapter notes](results/adapter-v0.1.0.md).
 
 ## oMLX and MLX-LM baselines
 

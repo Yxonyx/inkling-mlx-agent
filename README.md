@@ -4,6 +4,10 @@ Run Inkling 2 Mini locally on Apple Silicon with Pi or OpenCode. The native MLX 
 
 [Benchmark results and methodology](RESULTS.md) · [Training and evaluation](adaptation/README.md)
 
+## Download the adapter
+
+The [experimental v0.1.0 release](https://github.com/Yxonyx/inkling-pi-mlx-optimization/releases/tag/v0.1.0) contains the rank-16 attention LoRA for the official Inkling 2 Mini checkpoint. It is the bilingual English–Hungarian build. The native server applies it to every request when launched with `--adapter`. See the [adapter notes](results/adapter-v0.1.0.md) for the measurements, source credits and loading instructions.
+
 ## Measured on M2 Max
 
 | Workload | Baseline | Optimized |
@@ -93,7 +97,7 @@ PYTHONPATH=.venv-omlx/native-overlay HF_HUB_OFFLINE=1 \
   .venv-omlx/bin/python -m adaptation.local_mlx "$NATIVE_MODEL"
 ```
 
-The expected wheel SHA-256 is `d4a9c48a56719eae44879151f7c147776ee0dc3e593c8cb9206c9cc056e29745`. The server listens on loopback port 17681 and accepts token IDs. It serves the stock checkpoint by default, supports `--adapter DIRECTORY` for a compatible attention LoRA, and accepts `--no-prefix-cache` for an A/B comparison. The experimental adapter weights are pending release.
+The expected wheel SHA-256 is `d4a9c48a56719eae44879151f7c147776ee0dc3e593c8cb9206c9cc056e29745`. The server listens on loopback port 17681 and accepts token IDs. It serves the stock checkpoint by default, supports `--adapter DIRECTORY` for a compatible attention LoRA, and accepts `--no-prefix-cache` for an A/B comparison. The v0.1.0 release supplies a compatible adapter for this runtime.
 
 Check prefix reuse and exact output parity with `python3 verify_native_prefix.py` while the server is running.
 
