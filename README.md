@@ -18,6 +18,8 @@ Both columns use the same native MLX backend and adapter. Cache on and off produ
 
 An NVIDIA **B200** ran attention-only LoRA training on 85 verifier-passing Pi trajectories. In a preliminary 103-task evaluation, the candidate improved on 13 tasks and regressed on 12. The overall pass rate was 50.2% versus 50.5% for the stock model. A separate local adapter comparison reduced tool calls from 8 to 3 on one Go task and increased them from 9 to 10 on another shared success. These are early, task-level results. The adapter remains experimental pending a larger paired evaluation under the current Pi protocol.
 
+A separate open-data continuation ran six attention-only LoRA updates from an existing Inkling checkpoint. It replayed the previous training mix and introduced 26 curated examples from two public sources. Six resolved Open-SWE-Traces edits were adapted to Pi and verified on isolated file excerpts. See the [training note](results/open-data-continuation.md).
+
 ## Setup
 
 The oMLX setup below supports Pi and OpenCode. For the native checkpoint, see the [native MLX backend](#native-mlx-backend).
