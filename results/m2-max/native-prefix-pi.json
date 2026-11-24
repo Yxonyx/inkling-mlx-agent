@@ -1,0 +1,233 @@
+{
+  "hardware": "Apple M2 Max",
+  "unified_memory_gib": 64,
+  "base_revision": "ed40e7da625f594fc9c4990f5f66be24873c22d7",
+  "live_pi": {
+    "cold": {
+      "elapsed_s": 24.170317624986637,
+      "requests": [
+        {
+          "reused_tokens": 0,
+          "request_tokens": 774,
+          "ttft_s": 2.832723541010637,
+          "elapsed_s": 5.940322708047461,
+          "model": "cold"
+        },
+        {
+          "reused_tokens": 0,
+          "request_tokens": 844,
+          "ttft_s": 3.7108578750048764,
+          "elapsed_s": 6.190469207998831,
+          "model": "cold"
+        },
+        {
+          "reused_tokens": 0,
+          "request_tokens": 900,
+          "ttft_s": 3.861314666981343,
+          "elapsed_s": 6.372936124971602,
+          "model": "cold"
+        },
+        {
+          "reused_tokens": 0,
+          "request_tokens": 954,
+          "ttft_s": 4.103851667023264,
+          "elapsed_s": 5.302870833023917,
+          "model": "cold"
+        }
+      ],
+      "passed": true
+    },
+    "warm": {
+      "elapsed_s": 14.261913500027731,
+      "requests": [
+        {
+          "reused_tokens": 0,
+          "request_tokens": 774,
+          "ttft_s": 2.6430977919953875,
+          "elapsed_s": 5.697558416984975,
+          "model": "warm"
+        },
+        {
+          "reused_tokens": 768,
+          "request_tokens": 844,
+          "ttft_s": 0.549277083016932,
+          "elapsed_s": 2.860407208034303,
+          "model": "warm"
+        },
+        {
+          "reused_tokens": 768,
+          "request_tokens": 900,
+          "ttft_s": 0.6718787920544855,
+          "elapsed_s": 3.2080442090518773,
+          "model": "warm"
+        },
+        {
+          "reused_tokens": 768,
+          "request_tokens": 954,
+          "ttft_s": 0.8932717079878785,
+          "elapsed_s": 2.097399917023722,
+          "model": "warm"
+        }
+      ],
+      "passed": true
+    }
+  },
+  "live_parity": {
+    "prompt_tokens": true,
+    "sampled_tokens": true,
+    "sampled_logprobs": true,
+    "stop_reason": true
+  },
+  "replay_settings": {
+    "temperature": 1.0,
+    "seed": 23,
+    "max_tokens": 32
+  },
+  "replay": {
+    "rows": [
+      {
+        "session": 0,
+        "turn": 0,
+        "cold": {
+          "reused_tokens": 0,
+          "request_tokens": 4179,
+          "ttft_s": 12.532658542040735,
+          "elapsed_s": 14.185658292029984,
+          "http_s": 14.187393374973908
+        },
+        "warm": {
+          "reused_tokens": 0,
+          "request_tokens": 4179,
+          "ttft_s": 12.536361459002364,
+          "elapsed_s": 14.197787749988493,
+          "http_s": 14.19949979201192
+        },
+        "parity": true,
+        "tokens_match": true,
+        "max_logprob_delta": 0.0
+      },
+      {
+        "session": 0,
+        "turn": 1,
+        "warm": {
+          "reused_tokens": 4096,
+          "request_tokens": 4368,
+          "ttft_s": 1.1453791249659844,
+          "elapsed_s": 2.809324292000383,
+          "http_s": 2.811787417042069
+        },
+        "cold": {
+          "reused_tokens": 0,
+          "request_tokens": 4368,
+          "ttft_s": 13.29339812498074,
+          "elapsed_s": 14.891848791972734,
+          "http_s": 14.893537457974162
+        },
+        "parity": true,
+        "tokens_match": true,
+        "max_logprob_delta": 0.0
+      },
+      {
+        "session": 0,
+        "turn": 2,
+        "cold": {
+          "reused_tokens": 0,
+          "request_tokens": 4701,
+          "ttft_s": 14.18199154199101,
+          "elapsed_s": 15.793957250018138,
+          "http_s": 15.795735875028186
+        },
+        "warm": {
+          "reused_tokens": 4352,
+          "request_tokens": 4701,
+          "ttft_s": 1.4633839160087518,
+          "elapsed_s": 3.083819666004274,
+          "http_s": 3.0862510000006296
+        },
+        "parity": true,
+        "tokens_match": true,
+        "max_logprob_delta": 0.0
+      },
+      {
+        "session": 1,
+        "turn": 0,
+        "warm": {
+          "reused_tokens": 0,
+          "request_tokens": 5302,
+          "ttft_s": 16.033024000003934,
+          "elapsed_s": 17.66563079104526,
+          "http_s": 17.66774758300744
+        },
+        "cold": {
+          "reused_tokens": 0,
+          "request_tokens": 5302,
+          "ttft_s": 15.977670833992306,
+          "elapsed_s": 17.66906295903027,
+          "http_s": 17.670950624975376
+        },
+        "parity": true,
+        "tokens_match": true,
+        "max_logprob_delta": 0.0
+      },
+      {
+        "session": 1,
+        "turn": 1,
+        "cold": {
+          "reused_tokens": 0,
+          "request_tokens": 5415,
+          "ttft_s": 16.460106583021116,
+          "elapsed_s": 18.081446083029732,
+          "http_s": 18.083557500038296
+        },
+        "warm": {
+          "reused_tokens": 5120,
+          "request_tokens": 5415,
+          "ttft_s": 1.3857126249931753,
+          "elapsed_s": 3.0108259160188027,
+          "http_s": 3.013461207970977
+        },
+        "parity": true,
+        "tokens_match": true,
+        "max_logprob_delta": 0.0
+      },
+      {
+        "session": 1,
+        "turn": 2,
+        "warm": {
+          "reused_tokens": 5376,
+          "request_tokens": 5727,
+          "ttft_s": 1.4177087920252234,
+          "elapsed_s": 3.041069000028074,
+          "http_s": 3.0436432089773007
+        },
+        "cold": {
+          "reused_tokens": 0,
+          "request_tokens": 5727,
+          "ttft_s": 17.367818041006103,
+          "elapsed_s": 19.0580689580529,
+          "http_s": 19.05997041700175
+        },
+        "parity": true,
+        "tokens_match": true,
+        "max_logprob_delta": 0.0
+      }
+    ],
+    "parity": true,
+    "totals": {
+      "cold": {
+        "ttft_s": 89.81364366703201,
+        "http_s": 99.69114524999168,
+        "elapsed_s": 99.68004233413376
+      },
+      "warm": {
+        "ttft_s": 33.98156991699943,
+        "http_s": 43.82239020901034,
+        "elapsed_s": 43.808457415085286
+      }
+    },
+    "hit_median_ttft": {
+      "cold": 15.321049062506063,
+      "warm": 1.4017107085091993
+    }
+  }
+}

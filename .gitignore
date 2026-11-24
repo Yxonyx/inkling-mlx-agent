@@ -1,0 +1,10 @@
+.venv*/
+node_modules/
+__pycache__/
+runs/
+.DS_Store
+dist/
+profiles/pi/*.json
+!profiles/pi/models.json
+profiles/pi/sessions/
+profiles/pi/cache/

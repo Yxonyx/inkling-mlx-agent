@@ -1,0 +1,7 @@
+{
+  "name": "inkling-mlx-agent-tools",
+  "version": "0.1.0",
+  "private": true,
+  "engines": { "node": ">=22.19" },
+  "dependencies": { "@earendil-works/pi-coding-agent": "1.6.0" }
+}

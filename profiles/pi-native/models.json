@@ -1,0 +1,23 @@
+{
+  "providers": {
+    "inkling-local": {
+      "baseUrl": "http://127.0.0.1:17682/v1",
+      "api": "openai-completions",
+      "apiKey": "local",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsStore": false
+      },
+      "models": [
+        {
+          "id": "inkling-native",
+          "name": "Inkling 2 Mini Native MLX",
+          "input": ["text"],
+          "reasoning": false,
+          "contextWindow": 65536,
+          "maxTokens": 8192
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "providers": {
+    "inkling-local": {
+      "baseUrl": "http://127.0.0.1:17481/v1",
+      "api": "openai-completions",
+      "apiKey": "local",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsStore": false
+      },
+      "models": [{
+        "id": "inkling-mini",
+        "name": "Inkling 2 Mini oQ4e (local)",
+        "input": ["text"],
+        "reasoning": false,
+        "contextWindow": 16384,
+        "maxTokens": 4096
+      }]
+    }
+  }
+}

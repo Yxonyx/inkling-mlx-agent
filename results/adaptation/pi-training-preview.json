@@ -1,0 +1,87 @@
+{
+  "b200_rft": {
+    "training_traces": 85,
+    "tasks": 103,
+    "attempts_per_arm": 309,
+    "stock_pass_rate": 0.5049,
+    "adapter_pass_rate": 0.5016,
+    "better_tasks": 13,
+    "worse_tasks": 12,
+    "tied_tasks": 78,
+    "pass_rate_delta_ci95": [
+      -0.0421,
+      0.0324
+    ],
+    "earlier_turn_reasoning_preserved": false
+  },
+  "local_grpo_vs_previous": {
+    "shared_go_success": {
+      "previous_tool_calls": 8,
+      "candidate_tool_calls": 3
+    },
+    "shared_python_success": {
+      "previous_tool_calls": 9,
+      "candidate_tool_calls": 10
+    },
+    "both_failed": 1,
+    "protocol_preflight": {
+      "previous": true,
+      "broader": true
+    }
+  },
+  "local_current_vs_stock": {
+    "planned_pairs": 6,
+    "completed_pairs": 2,
+    "protocol_preflight": false,
+    "successful_completions": {
+      "stock": 1,
+      "lora": 1
+    },
+    "timeouts": {
+      "stock": 1,
+      "lora": 1
+    },
+    "rows": [
+      {
+        "stock": {
+          "output_tokens": 12364,
+          "tool_calls": 20,
+          "elapsed_s": 900.155,
+          "reward": 1.0,
+          "agent_exit": 137,
+          "timeout_s": 900,
+          "terminal_stop": "toolUse"
+        },
+        "lora": {
+          "output_tokens": 9262,
+          "tool_calls": 13,
+          "elapsed_s": 900.14,
+          "reward": 1.0,
+          "agent_exit": 137,
+          "timeout_s": 900,
+          "terminal_stop": "error"
+        }
+      },
+      {
+        "stock": {
+          "output_tokens": 449,
+          "tool_calls": 4,
+          "elapsed_s": 40.302,
+          "reward": 1.0,
+          "agent_exit": 0,
+          "timeout_s": 900,
+          "terminal_stop": "stop"
+        },
+        "lora": {
+          "output_tokens": 592,
+          "tool_calls": 5,
+          "elapsed_s": 52.17,
+          "reward": 1.0,
+          "agent_exit": 0,
+          "timeout_s": 900,
+          "terminal_stop": "stop"
+        }
+      }
+    ]
+  }
+}

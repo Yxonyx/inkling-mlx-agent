@@ -1,0 +1,5 @@
+Write a Python module implementing a small in-memory key-value store with expiration.
+Use only the Python standard library, a monotonic clock, a small dataclass for entries,
+and an injectable clock for deterministic tests. Implement get, set, delete, and a
+purge method. Show the complete implementation followed by a few unittest tests.
+Keep going until you have covered replacement and expiration at the boundary.
